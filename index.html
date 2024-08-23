@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Simplotel</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <nav class="navbar">
+        <ul class="nav-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact US</a></li>
+          <li><img src="./images/menu-bar.png" alt="Menu Bar" /></li>
+        </ul>
+      </nav>
+       <nav class="navbar-mobile-view">
+        <img class="menu-icon" src="./images/menu-bar.png" alt="Menu Bar" onclick="toggleMenu()"/>
+        <ul class="nav-items-mobile-view">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact US</a></li>
+        </ul>
+        
+      </nav>
+     
+      <div class="hero-banner-container">
+        <div class="hero-banner-text-container">
+          <h1>LOREM IPSUM</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            finibus, ligula sed tempus vulputate, nisl mi tristique nibh, sit
+            amet convallis nunc risus vel leo. Vivamus sit amet nisi efficitur,
+            malesuada justo sit amet, semper ante. Fusce pretium augue ut
+            efficitur rhoncus. Pellentesque euismod ornare tellus, commodo
+            mollis felis malesuada in. Proin vel cursus felis, eu dapibus ipsum.
+            Nunc varius posuere nibh, in consectetur ex posuere vitae. Nunc vel
+            gravida diam.
+          </p>
+          <div><button class="button">Click Me</button></div>
+        </div>
+         <div class="hero-banner-image-container">
+          <img
+          class="hero-banner-img"
+          src="./images/pexels-robin-stickel-70497.jpg"
+        />
+         </div>
+        </div>
+      </div>
+       <div class="details-container">
+        <div class="details-image-container">
+          <div class="details-image-container-2">
+            <img class="image-1" src="./images/pexels-eva-bronzini-6141651.jpg" />
+            <img class="image-2" src="./images/pexels-rachel-claire-6752433.jpg" />
+          </div>
+          <img class="image-3" src="./images/pexels-mister-mister-3434523.jpg" />
+        </div>
+        <div class="details-text-container">
+          <p>LORM IPSUM</p>
+          <h1 class="text">LOREM ISPSUM SET ADEMIR</h1>
+          <div class="button-container">
+            <p>Click me</p>
+            <img class="arrow-image" src="./images/icons8-arrow-30.png" />
+          </div>
+        </div>
+      </div> 
+    </div>
+     <script>
+    function toggleMenu() {
+      const navItems = document.querySelector('.nav-items-mobile-view');
+      navItems.classList.toggle('active');
+      console.log("Clicked")
+    }
+  </script>
+  </body>
+</html>
